@@ -5,14 +5,14 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'ENTER_STORAGE_ACCOUNT_NAME'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'ENTER_BLOB_STORAGE_KEY'
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'ENTER_IMAGES_CONTAINER_NAME'
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'saarticlecms'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'wdPA1JVuGFcZHYlSnqu5PMRBJKjXKQB0ta+zC5THd/yCUYmG6vfmoSvv5W2/nNjUIHwZ/amFhE3L+ASt4tPIiw=='
+    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'scimages'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'ENTER_SQL_SERVER_NAME.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'ENTER_SQL_DB_NAME'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'ENTER_SQL_SERVER_USERNAME'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'ENTER_SQL_SERVER_PASSWORD'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'ssarticlecms.database.windows.net'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'dbArticleCMS'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cmsadmin'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'F@ncyP@ssw0rd'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
