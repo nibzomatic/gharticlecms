@@ -5,10 +5,6 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'saarticlecms'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'wdPA1JVuGFcZHYlSnqu5PMRBJKjXKQB0ta+zC5THd/yCUYmG6vfmoSvv5W2/nNjUIHwZ/amFhE3L+ASt4tPIiw=='
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'scimages'
-
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'ssarticlecms.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'dbArticleCMS'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cmsadmin'
@@ -16,6 +12,10 @@ class Config(object):
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'saarticlecms'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'wdPA1JVuGFcZHYlSnqu5PMRBJKjXKQB0ta+zC5THd/yCUYmG6vfmoSvv5W2/nNjUIHwZ/amFhE3L+ASt4tPIiw=='
+    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'scimages'
 
     ### Info for MS Authentication ###
     ### As adapted from: https://github.com/Azure-Samples/ms-identity-python-webapp ###
