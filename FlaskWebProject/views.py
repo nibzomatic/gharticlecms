@@ -85,7 +85,8 @@ def authorized():
         return render_template("auth_error.html", result=request.args)
     if request.args.get('code'):
         cache = _load_cache()
-        # TODO: Acquire a token from a built msal app, along with the appropriate redirect URI
+        redirect_uri = url_for('authorized', _external=True, _scheme='https')
+        print(f"Redirect URI: {redirect_uri}")  # Log the URI to check
         result = _build_msal_app(cache=cache).acquire_token_by_authorization_code(
           request.args['code'],
           scopes=Config.SCOPE,
@@ -116,8 +117,11 @@ def logout():
 
 def _load_cache():
     cache = msal.SerializableTokenCache()
-    if session.get('token_cache'):  # If the token cache exists in session
-        cache.deserialize(session['token_cache'])  # Deserialize and load it into the cache
+    try:
+        if session.get('token_cache'):  # If the token cache exists in session
+            cache.deserialize(session['token_cache'])  # Deserialize and load it into the cache
+    except Exception as e:
+        print(f"Error loading cache: {e}")
     return cache
 
 def _save_cache(cache):
@@ -125,6 +129,9 @@ def _save_cache(cache):
         session['token_cache'] = cache.serialize()
 
 def _build_msal_app(cache=None, authority=None):
+    print(f"CLIENT_ID: {Config.CLIENT_ID}")
+    print(f"CLIENT_SECRET: {Config.CLIENT_SECRET}")
+    print(f"AUTHORITY: {Config.AUTHORITY}")
     return msal.ConfidentialClientApplication(
         Config.CLIENT_ID, authority=authority or Config.AUTHORITY,
         client_credential=Config.CLIENT_SECRET, token_cache=cache)
