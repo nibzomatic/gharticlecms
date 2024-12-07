@@ -1,4 +1,5 @@
 import os
+from urllib.parse import quote_plus
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 

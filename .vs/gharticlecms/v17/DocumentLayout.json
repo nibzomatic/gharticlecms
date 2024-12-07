@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -89,23 +89,6 @@
               "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "testconnect.py",
-              "DocumentMoniker": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\testconnect.py",
-              "RelativeDocumentMoniker": "testconnect.py",
-              "ToolTip": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\testconnect.py",
-              "RelativeToolTip": "testconnect.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-17T14:57:05.514Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "config.py",
@@ -113,22 +96,10 @@
               "RelativeDocumentMoniker": "config.py",
               "ToolTip": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\config.py",
               "RelativeToolTip": "config.py",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACgAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-11-16T18:50:17.853Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "forms.py",
-              "DocumentMoniker": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\FlaskWebProject\\forms.py",
-              "RelativeDocumentMoniker": "FlaskWebProject\\forms.py",
-              "ToolTip": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\FlaskWebProject\\forms.py",
-              "RelativeToolTip": "FlaskWebProject\\forms.py",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-17T14:12:33.727Z"
             },
             {
               "$type": "Document",
@@ -201,6 +172,34 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAswBsAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-11-16T19:02:43.251Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "forms.py",
+              "DocumentMoniker": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\FlaskWebProject\\forms.py",
+              "RelativeDocumentMoniker": "FlaskWebProject\\forms.py",
+              "ToolTip": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\FlaskWebProject\\forms.py",
+              "RelativeToolTip": "FlaskWebProject\\forms.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-17T14:12:33.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "testconnect.py",
+              "DocumentMoniker": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\testconnect.py",
+              "RelativeDocumentMoniker": "testconnect.py",
+              "ToolTip": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\testconnect.py",
+              "RelativeToolTip": "testconnect.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-17T14:57:05.514Z"
             },
             {
               "$type": "Document",

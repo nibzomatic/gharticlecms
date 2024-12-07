@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\neilb\\source\\repos\\gharticlecms\\testconnect.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:testconnect.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\neilb\\source\\repos\\gharticlecms\\config.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\neilb\\source\\repos\\gharticlecms\\testconnect.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:testconnect.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\neilb\\source\\repos\\gharticlecms\\requirements2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "testconnect.py",
               "DocumentMoniker": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\testconnect.py",
               "RelativeDocumentMoniker": "testconnect.py",
@@ -107,15 +107,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "config.py",
               "DocumentMoniker": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\config.py",
               "RelativeDocumentMoniker": "config.py",
               "ToolTip": "C:\\Users\\neilb\\source\\repos\\gharticlecms\\config.py",
               "RelativeToolTip": "config.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-16T18:50:17.853Z"
+              "WhenOpened": "2024-11-16T18:50:17.853Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
