@@ -5,12 +5,14 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'ssarticlecms.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'dbArticleCMS'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cmsadmin'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'F@ncyP@ssw0rd'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'ssarticlecms3.database.windows.net'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'dbArticleCMS3'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cmsadmin3'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'F@ncyP@ssw0rd3'
+    ENCODED_PASSWORD = quote_plus(SQL_PASSWORD)
+
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
-    SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
+    SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + ENCODED_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server&timeout=30'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'saarticlecms'

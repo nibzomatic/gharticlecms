@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FlaskWebProject",
+    "\\FlaskWebProject\\templates",
+    "\\sql_scripts",
+    "\\tests"
   ],
-  "SelectedNode": "\\C:\\Users\\neilb\\Source\\Repos\\gharticlecms",
   "PreviewInSolutionExplorer": false
 }
